@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOOK</title>
+</head>
+<body>
+<h1>get_books.php</h1>
+<a href="index.html">К оглавлению</a>
+<h2>Описание</h2>
+<p>Метод возвращает массив объектов <b>book</b>. С информацией о книгах.</p>
+<hr>
+<h2>Принимаемые параметры</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <th>count</th>
+                <th>integer, беззнаковое</th>
+                <th>кол-во записей, которые будут возвращены, максимальное значение: 5</th>
+            </tr>
+            <tr>
+                <th>offset</th>
+                <th>integer, беззнаковое</th>
+                <th>Смещение, номер записи с которого нужно начать</th>
+            </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Возвращаемое значение</h2>
+<p>Массив объектов типа book</p>
+<table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>integer</th>
+            <th>Уникальный иднетификатор книги</th>
+        </tr>
+        <tr>
+            <th>title</th>
+            <th>string</th>
+            <th>Название книги</th>
+        </tr>
+        <tr>
+            <th>author</th>
+            <th>integer</th>
+            <th>Автор(ы) книги</th>
+        </tr>
+        <tr>
+            <th>year</th>
+            <th>integer</th>
+            <th>Год выпуска книги</th>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Пример запроса</h2>
+<pre>АДРЕС_САЙТА/docs_ip23/get_books.php?id=3</pre>
+<h2>Пример ответа</h2>
+<pre>{"books": [{"Author":"Майкл Смит", "Title":"Страсть и ярость", "Year":"2022", "id":"12"}, {"Author":"Даниель Дефо", "Title":" Жизнь и удивительные приключения морехода Робинзона Крузо", "Year":"2022", "id":"13"}]}</pre>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOOK</title>
+</head>
+<body>
+<h1>get_book.php</h1>
+<a href="index.html">К оглавлению</a>
+<h2>Описание</h2>
+<p>Метод возвращает объект <b>book</b>. С информацией о книге.</p>
+<hr>
+<h2>Принимаемые параметры</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>integer</th>
+            <th>Уникальный иднетификатор книги</th>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Возвращаемое значение</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>integer</th>
+            <th>Уникальный иднетификатор книги</th>
+        </tr>
+        <tr>
+            <th>title</th>
+            <th>string</th>
+            <th>Название книги</th>
+        </tr>
+        <tr>
+            <th>author</th>
+            <th>integer</th>
+            <th>Автор(ы) книги</th>
+        </tr>
+        <tr>
+            <th>year</th>
+            <th>integer</th>
+            <th>Год выпуска книги</th>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Пример запроса</h2>
+<pre>АДРЕС_САЙТА/docs_ip23/get_book.php?id=3</pre>
+<h2>Пример ответа</h2>
+<pre>{"book": {"id": 1, "title": "Мы", "author": "Е.И. Замятин", "year": 1920}}</pre>
+</body>
+</html>
